@@ -8,9 +8,21 @@
 
     <Grid>
         <zxing:ZXingScannerView IsScanning="True" OnScanResult="ZXingScannerView_OnScanResult" />
-        <Image
-            HorizontalOptions="Center"
-            Source="overlay"
-            WidthRequest="300" />
+        <Grid Margin="0,20">
+            <Image
+                HorizontalOptions="Center"
+                Source="overlay"
+                WidthRequest="300" />
+            <Frame
+                Margin="10"
+                Padding="10"
+                BackgroundColor="#80FFFFFF"
+                CornerRadius="10"
+                HasShadow="False"
+                HorizontalOptions="Center"
+                VerticalOptions="Start">
+                <Label Text="Scan The QR Code" TextColor="Black" />
+            </Frame>
+        </Grid>
     </Grid>
 </ContentPage>

@@ -18,7 +18,7 @@ namespace QRScanner
         private void ZXingScannerView_OnScanResult(ZXing.Result result)
         {
             Device.BeginInvokeOnMainThread(() => {
-                string theResult = result.Text + " the result" + result.BarcodeFormat.ToString();
+                string theResult = "Result: " + result.Text;
                 Application.Current.MainPage.DisplayAlert("QRCode Result", theResult, "OK");
 
             });
